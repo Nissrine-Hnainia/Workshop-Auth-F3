@@ -1,14 +1,15 @@
 import React from 'react'
-import {Navbar, Nav, NavLink} from "react-bootstrap"
+import {Navbar, Nav} from "react-bootstrap";
+import {Link} from "react-router-dom"
 
 const Header = () => {
     return (
         <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="#">APP</Navbar.Brand>
             <Nav className="mr-auto">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/register">Register</NavLink>
-                <NavLink to="/login">Sign In</NavLink>
+                <Link to="/">Home</Link>
+                <Link to="/register">Register</Link>
+                <Link to="/login">Sign In</Link>
             </Nav>
         </Navbar>
     )
